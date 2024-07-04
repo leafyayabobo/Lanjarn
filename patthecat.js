@@ -32,12 +32,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // 點擊咩按鈕
     mehButton.addEventListener('click', function() {
-        if (state === '清醒') {
-            characterImage.src = '凌萌/凌莔_咩.jpg';
-            state = '咩';
-        } else if (state === '咩') {
+        if (state === '咩') {
             characterImage.src = '凌萌/凌莔_清醒.jpg';
             state = '清醒';
+        }
+        else{
+            characterImage.src = '凌萌/凌莔_咩.jpg';
+            state = '咩';
         }
     });
 });
